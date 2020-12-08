@@ -25,6 +25,9 @@ import {AuthenticationProvider} from "../providers/authentication.provider";
 import {LEARNPLACE_MANAGER, LearnplaceManager} from "../learnplace/services/learnplace.management";
 import {LEARNING_MODULE_MANAGER, LearningModuleManager} from "../learningmodule/services/learning-module-manager";
 
+// Dirty fix for build error
+declare let cordova: any;
+
 export interface DownloadProgress {
     fileObject: ILIASObject;
     loaded: number;
