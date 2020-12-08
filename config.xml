@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget android-versionCode="2020120701" id="de.esc.pegasus" ios-CFBundleVersion="20201207.1" version="4.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <hook src="tools/patch-platform-android9.js" type="after_build"/>
-    <name>ESC ILIAS</name>
+<widget android-versionCode="2020120801" id="de.unituebingen.Pegasus" ios-CFBundleVersion="20201208.1" version="4.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <hook src="tools/patch-platform-android9.js" type="before_compile"/>
+    <name>Uni Tübingen Pegasus</name>
     <description>Download, sync and store ILIAS-files on your device</description>
     <author email="info@studer-raimann.ch" href="https://www.studer-raimann.ch/">studer + raimann ag</author>
     <content src="index.html"/>

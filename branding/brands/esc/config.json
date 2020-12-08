@@ -1,9 +1,8 @@
 {
   "ilias_installation_ids": [1],
   "projectConfig": {
-    "id": "de.esc.pegasus",
-
-    "name": "ESC ILIAS",
+    "id": "de.unituebingen.Pegasus",
+    "name": "Uni Tübingen Pegasus",
     "description": "Download, sync and store ILIAS-files on your device"
   }
 }

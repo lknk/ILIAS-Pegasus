@@ -7,6 +7,7 @@ const fs = require("fs");
 replaceInFile(
     "platforms/android/app/src/main/AndroidManifest.xml",
     /<application/g,
+    "network_security_config",
     '<application android:networkSecurityConfig="@xml/network_security_config"'
 );
 includeNetSecConfig();
@@ -17,12 +18,14 @@ function includeNetSecConfig() {
         (err) => { if (err) throw  err; });
 }
 
-function replaceInFile(file, match, replace) {
+function replaceInFile(file, match, check, replace) {
     fs.readFile(file, "utf8", function (err,data) {
-        if (err) return console.log(err);
-        let result = data.replace(match, replace);
-        fs.writeFile(file, result, "utf8", function (err) {
-            if (err) throw  err;
-        });
+        if (err) throw err;
+        if (!data.includes(check)) {
+            let result = data.replace(match, replace);
+            fs.writeFile(file, result, "utf8", function (err) {
+                if (err) throw  err;
+            });
+        }
     });
 }
