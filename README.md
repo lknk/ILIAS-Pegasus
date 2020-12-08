@@ -18,7 +18,7 @@ The following tools are needed to build and deploy the app.
 
 #### Ionic CLI:
 ```bash
-npm install -g ionic
+npm install -g @ionic/cli
 ```
 
 #### Cordova CLI:
