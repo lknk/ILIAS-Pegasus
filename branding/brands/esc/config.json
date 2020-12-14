@@ -1,5 +1,5 @@
 {
-  "ilias_installation_ids": [1],
+  "ilias_installation_ids": [1,2],
   "projectConfig": {
     "id": "de.unituebingen.Pegasus",
     "name": "Uni Tübingen Pegasus",
